@@ -9,3 +9,5 @@ Grocery Booking system is web application where
    - Book multiple items as per availability.
    
 Application is built using Java-SpringBoot MVC architecture and api's are tested using Postman.MySQL database is used to capture and manage grocerry inventory. Source code and postman collection is committed.
+
+Tech Stack - Java-SpringBoot, MySQL, JPA, Hibernate,Postman.
