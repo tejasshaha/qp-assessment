@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "5a56d170-2b32-490a-a180-a5b9d12fa69c",
+		"name": "GrocerryManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8804089"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/admin/addItemToInventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Rice\",\"price\":50,\"quantity\":50}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/admin/addItemToInventory"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/admin/viewItemsOfInventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/admin/viewItemsOfInventory"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/admin/deleteItemFromInventory/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/admin/deleteItemFromInventory/1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/admin/updateItemFromInventory",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Wheat\",\r\n    \"price\": 30,\r\n    \"quantity\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/admin/updateItemFromInventory"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/viewItemsOfInventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/user/viewItemsOfInventory"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/bookItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"itemId\":1,\"itemQuantity\":1},{\"itemId\":2,\"itemQuantity\":1},{\"itemId\":3,\"itemQuantity\":1}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/user/bookItems"
+			},
+			"response": []
+		}
+	]
+}
